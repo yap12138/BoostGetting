@@ -7,8 +7,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hogason", "Hogason\Hogason.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DeadlineTimer", "DeadlineTimer\DeadlineTimer.vcxproj", "{0EC73957-F63A-43B9-8E4E-B86EAD55177D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TCP", "TCP\TCP.vcxproj", "{A2081438-274C-4CD9-8A03-F5983104CF23}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -33,14 +31,6 @@ Global
 		{0EC73957-F63A-43B9-8E4E-B86EAD55177D}.Release|x64.Build.0 = Release|x64
 		{0EC73957-F63A-43B9-8E4E-B86EAD55177D}.Release|x86.ActiveCfg = Release|Win32
 		{0EC73957-F63A-43B9-8E4E-B86EAD55177D}.Release|x86.Build.0 = Release|Win32
-		{A2081438-274C-4CD9-8A03-F5983104CF23}.Debug|x64.ActiveCfg = Debug|x64
-		{A2081438-274C-4CD9-8A03-F5983104CF23}.Debug|x64.Build.0 = Debug|x64
-		{A2081438-274C-4CD9-8A03-F5983104CF23}.Debug|x86.ActiveCfg = Debug|Win32
-		{A2081438-274C-4CD9-8A03-F5983104CF23}.Debug|x86.Build.0 = Debug|Win32
-		{A2081438-274C-4CD9-8A03-F5983104CF23}.Release|x64.ActiveCfg = Release|x64
-		{A2081438-274C-4CD9-8A03-F5983104CF23}.Release|x64.Build.0 = Release|x64
-		{A2081438-274C-4CD9-8A03-F5983104CF23}.Release|x86.ActiveCfg = Release|Win32
-		{A2081438-274C-4CD9-8A03-F5983104CF23}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
