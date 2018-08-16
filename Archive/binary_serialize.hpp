@@ -20,8 +20,9 @@ namespace hogason
 			std::string str;
 
 			friend class boost::serialization::access;
-			template<class Archive>
-			void serialize(Archive &ar, const unsigned int /*version*/)
+
+			template <class Archive>
+			void serialize(Archive& ar, const unsigned int /*version*/)
 			{
 				ar & num;
 				ar & str;
@@ -38,7 +39,7 @@ namespace hogason
 			{
 				try
 				{
-					message_t buf_t {77, "it's testing file."};
+					message_t buf_t{77, "it's testing file."};
 					boost::archive::binary_oarchive oa(os);
 					oa << buf_t;
 				}
@@ -66,7 +67,7 @@ namespace hogason
 					ia >> buf_t;
 					std::cout << buf_t.num << "\n" << buf_t.str << "\n";
 				}
-				catch (boost::archive::archive_exception& e)//boost::archive::archive_exception  
+				catch (boost::archive::archive_exception& e) //boost::archive::archive_exception  
 				{
 					std::cerr << "Exception: " << e.what() << "\n";
 				}
@@ -78,7 +79,7 @@ namespace hogason
 		/** 比较text流和binary流处理数据的性能差异 */
 		void TEST_compare_text_with_binary()
 		{
-			message_t test{ 77, "it's testing file." };
+			message_t test{77, "it's testing file."};
 
 			std::stringstream binary_sstream;
 			std::stringstream text_sstream;
@@ -95,7 +96,7 @@ namespace hogason
 			{
 				text_oa << test;
 			}
-			end = time(NULL);	//这里时间用来计算程序执行时间
+			end = time(NULL); //这里时间用来计算程序执行时间
 
 			size = text_sstream.tellp() / (1024 * 1024);
 
@@ -107,10 +108,10 @@ namespace hogason
 				binary_oa << test;
 			}
 			end = time(NULL);
-  
+
 			//以MB为单位
 			size = binary_sstream.tellp() / (1024 * 1024);
-  
+
 			std::cout << "binary serialization seconds: " << end - begin << ", space: " << size << std::endl;
 		}
 
